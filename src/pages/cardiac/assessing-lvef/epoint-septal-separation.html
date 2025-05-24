@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>E-Point Septal Separation (EPSS)</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/epoint-septal-separation.css" />
+    <div class="container">
+        <h1>E-Point Septal Separation (EPSS)</h1>
+        <p>EPSS is a measurement used in echocardiography to assess left ventricular function. It is the distance between the E-point of the mitral valve and the interventricular septum during diastole.</p>
+        <h2>Normal Values</h2>
+        <ul>
+            <li>Normal EPSS: &lt; 7 mm</li>
+            <li>Mild LV dysfunction: 7-10 mm</li>
+            <li>Moderate LV dysfunction: 10-15 mm</li>
+            <li>Severe LV dysfunction: &gt; 15 mm</li>
+        </ul>
+    </div>
+        <h2>Calculate LV Function</h2>
+        <label for="epssInput">Enter EPSS (mm):</label>
+        <input type="number" id="epssInput" placeholder="Enter EPSS value" />
+        <button onclick="epoint_septal_separation()">Calculate</button>
+        <div id="result" style="margin-top:1em;font-weight:bold;"></div>
+        </div>
+    <script src="/src/scripts/calculations.js"></script>
+</body>
+</html>
