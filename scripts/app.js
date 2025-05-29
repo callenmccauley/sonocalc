@@ -1,8 +1,6 @@
 const toggleButton = document.getElementById('toggle-button')
 const sidebar = document.getElementById('sidebar')
 
-fetch('pages/sidebar.html').then(res=>res.text()).then(html=>{document.getElementById('sidebar-container').innerHTML=html;initSidebar()});
-
 function toggleSidebar(){
   sidebar.classList.toggle('close')
   toggleButton.classList.toggle('rotate')
