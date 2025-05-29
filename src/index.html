@@ -7,107 +7,18 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <nav id="sidebar">
-      <ul>
-        <li>
-          <span class="logo">SonoCalc</span>
-          <a href="index.html"></a>
-          <button onclick=toggleSidebar() id="toggle-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z"/></svg>
-          </button>
-        </li>
-        <li>
-          <button onclick=toggleSubMenu(this) class="dropdown-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M300-840q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 5-.5 10t-.5 10h-80q1-5 1-10v-10q0-60-40-100t-100-40q-47 0-87 26.5T518-666h-76q-15-41-55-67.5T300-760q-60 0-100 40t-40 100v10q0 5 1 10H81q0-5-.5-10t-.5-10q0-94 63-157t157-63Zm-88 480h112q32 31 70 67t86 79q48-43 86-79t70-67h113q-38 42-90 91T538-158l-58 52-58-52q-69-62-120.5-111T212-360Zm230 40q13 0 22.5-7.5T478-347l54-163 35 52q5 8 14 13t19 5h320v-80H623l-69-102q-6-9-15.5-13.5T518-640q-13 0-22.5 7.5T482-613l-54 162-34-51q-5-8-14-13t-19-5H40v80h297l69 102q6 9 15.5 13.5T442-320Zm38-167Z"/></svg>
-            <span>Cardiac</span>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-          </button>
-          <ul class = "dropdown-content">
-            <div>
-              <li>
-                <button onclick=toggleSubMenu(this) class="dropdown-button">
-                  <span>Assessing LVEF</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-                </button>
-                <ul class = "dropdown-sub-content">
-                  <div>
-                    <li><a href="pages/cardiac/assessing-lvef/epoint-septal-separation.html"> E-Point Septal Separation </a></li>
-                    <li><a href="pages/cardiac/assessing-lvef/fractional-shortening.html"> Fractional Shortening </a></li>
-                    <li><a href="pages/cardiac/assessing-lvef/fractional-area-change.html"> Fractional Area Charge </a></li>
-                    <li><a href="pages/cardiac/assessing-lvef/simpson-biplane.html">Simpson Biplane </a></li>
-                    <li><a href="pages/cardiac/assessing-lvef/vti-method.html"> VTI Method </a></li>
-                  </div>
-                </ul>
-                <button onclick=toggleSubMenu(this) class="dropdown-button">
-                  <span>Valves</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-                </button>
-                <ul class = "dropdown-sub-content">
-                  <div>
-                    <li><a href="pages/cardiac/valves/tr.html"> TR </a></li>
-                  </div>
-                </ul>
-                <button onclick=toggleSubMenu(this) class="dropdown-button">
-                  <span>Right Heart</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-                </button>
-                <ul class = "dropdown-content">
-                  <div>
-                    <li><a href="pages/cardiac/right-heart/tricuspid-annular-plane-systolic-excursion.html"> Tricuspid Annular Plane Systolic Excursion (TAPSE) </a></li>
-                  </div>
-                </ul>
-                <li>
-                  <span>Tamponade</span>
-                </li>
-                <li>
-                  <span>Resus TEE</span>
-                </li>
-                <button onclick=toggleSubMenu(this) class="dropdown-button">
-                  <span>Volume Assessment</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-                </button>
-                <ul class = "dropdown-sub-content">
-                  <div>
-                    <li><a href="pages/cardiac/volume-assessment/icv-measurement.html"> ICV Measurement </a></li>
-                    <li><a href="pages/cardiac/volume-assessment/vexus.html"> Vexus </a></li>
-                    <li><a href="pages/cardiac/volume-assessment/values.html"> Valves </a></li>
-                  </div>
-                </ul>
-              </li>
-            </div>
-          </ul>
-        </li>
-
-        <li>
-          <button onclick=toggleSubMenu(this) class="dropdown-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-80v-240q0-50 35-85t85-35h80q50 0 85-35t35-85q0-17-11.5-28.5T400-600q-33 0-56.5-23.5T320-680v-200h80v200q50 0 85 35t35 85q0 83-58.5 141.5T320-360h-80q-17 0-28.5 11.5T200-320v240h-80Zm240 0h-80v-80q0-50 35-85t85-35h160q83 0 141.5-58.5T760-480v-40q0-83-58.5-141.5T560-720q-33 0-56.5-23.5T480-800v-80h80v80q117 0 198.5 81.5T840-520v40q0 117-81.5 198.5T560-200H400q-17 0-28.5 11.5T360-160v80Zm-160 0v-240q0-17 11.5-28.5T240-360h80q83 0 141.5-58.5T520-560q0-50-35-85t-85-35v-200 200q50 0 85 35t35 85q0 83-58.5 141.5T320-360h-80q-17 0-28.5 11.5T200-320v240Z"/></svg>
-            <span>GI</span>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-          </button>
-          <ul class="dropdown-content">
-            <div>
-              <li><a href="pages/gi/gi.html"> GI </a></li>
-            </div>
-          </ul>
-        </li>
-
-        <li>
-          <button onclick=toggleSubMenu(this) class="dropdown-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M360-40v-81q-25-5-43-22.5T294-187l-13-80q-6-37 18-65t61-28v-47q-10 4-19.5 5.5T320-400q-100 0-170-70T80-640v-40q0-100 70-170t170-70q50 0 85 35t35 85q0 50-35 85t-85 35h-80v-80h80q17 0 28.5-11.5T360-800q0-17-11.5-28.5T320-840q-66 0-113 47t-47 113v40q0 66 47 113t113 47q17 0 28.5-11.5T360-520q0-17-11.5-28.5T320-560h-80v-80h80q50 0 85 35t35 85v160h80v-160q0-50 35-85t85-35h80v80h-80q-17 0-28.5 11.5T600-520q0 17 11.5 28.5T640-480q66 0 113-47t47-113v-40q0-66-47-113t-113-47q-17 0-28.5 11.5T600-800q0 17 11.5 28.5T640-760h80v80h-80q-50 0-85-35t-35-85q0-50 35-85t85-35q100 0 170 70t70 170v40q0 100-70 170t-170 70q-11 0-20.5-1.5T600-407v47q37 0 61 28t18 65l-13 80q-5 26-23 43.5T600-121v81h-80v-80h-80v80h-80Zm0-240 13 80h214l13-80H360Zm0 0 13 80-13-80Z"/></svg>
-            <span>GU</span>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-          </button>
-          <ul class="dropdown-content">
-            <div>
-              <li><a href="pages/gu/bladder-volume.html"> Bladder Volume </a></li>
-            </div>
-          </ul>
-        </li>
-
-      </ul>
-    </nav>
+    <div id="sidebar-container"></div>
+    <script>
+      fetch('/pages/sidebar.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('sidebar-container').innerHTML = html;
+          // Optionally, re-initialize sidebar JS here if needed
+        });
+    </script>
     <main>
       <div class="container">
+        <!-- <img src="images/sonocalc_logo.png" alt="SonoCalc Logo" class="logo"> -->
         <h1>SonoCalc by Pocus Cowboys</h1>
         <p>Ultrasounds calculations.</p>
     </main>
