@@ -35,3 +35,7 @@ function closeAllSubMenus(){
     ul.previousElementSibling.classList.remove('rotate')
   })
 }
+
+function homePage(){
+  window.location.href = 'index.html'
+}
