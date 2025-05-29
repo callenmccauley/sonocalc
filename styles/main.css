@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
-  --base-clr: #11121a;
-  --line-clr: #42434a;
-  --hover-clr: #222533;
-  --text-clr: #e6e6ef;
-  --accent-clr: #5e63ff;
-  --secondary-text-clr: #b0b3c1;
+ --base-clr: #0a2239;           /* Deep blue background */
+  --line-clr: #1d3557;           /* Muted navy for lines */
+  --hover-clr: #133b5c;          /* Slightly lighter blue for hover */
+  --text-clr: #f1faee;           /* Almost white for text */
+  --accent-clr: #3fc1c9;         /* Teal accent */
+  --secondary-text-clr: #a8dadc; /* Light teal for secondary text */
+  --highlight-clr: #ffd166;   
 }
 *{
   margin: 0;

@@ -5,10 +5,27 @@
     <title>E-Point Septal Separation (EPSS)</title>
     <link rel="stylesheet" href="../../../styles/main.css">
 </head>
-<body>
+<div id="sidebar-container"></div>
+    <script>
+      fetch('../../sidebar.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('sidebar-container').innerHTML = html;
+          // Optionally, re-initialize sidebar JS here if needed
+        });
+    </script>
+<main>
     <div class="container">
         <h1>E-Point Septal Separation (EPSS)</h1>
         <p>EPSS is a measurement used in echocardiography to assess left ventricular function. It is the distance between the E-point of the mitral valve and the interventricular septum during diastole.</p>
+        <ul>
+            <li>Distance between anterior leaflet of mitral valve and septum during early diastole</li>
+            <li>Obtained in PSLA view (need LV horizontal)</li>
+            <li>Use M mode and place cursor over tip of mitral valve</li>
+            <li>In M mode measure distance between mitral E wave and LV septum</li>
+            <li>Values: less than 8 is normal EF, 8-18 mild-moderate reduced EF, and over 18 mm is severely reduced EF</li>
+            <li>Limitations: mitral valvopathies, arrhythmia</li>
+        </ul>
         <h2>Normal Values</h2>
         <ul>
             <li>Normal EPSS: &lt; 7 mm</li>
@@ -18,11 +35,12 @@
         </ul>
     </div>
         <h2>Calculate LV Function</h2>
-        <label for="epssInput">Enter EPSS (mm):</label>
         <input type="number" id="epssInput" placeholder="Enter EPSS value" />
         <button onclick="epoint_septal_separation()">Calculate</button>
-        <div id="result" style="margin-top:1em;font-weight:bold;"></div>
+        <h3>Result</h3>
+        <div id="result"></div>
         </div>
-    <script src="/src/scripts/calculations.js"></script>
-</body>
+    <script src="../../../scripts/calculations.js"></script>
+    <script src="../../../scripts/app.js"></script>
+    </main>
 </html>
