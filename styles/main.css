@@ -156,6 +156,12 @@ main p{
 
   h2, p { margin-top: 1em }
 }
+.container .image{
+  width: 4%;
+  height: 4;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
 
 
 /* * {
